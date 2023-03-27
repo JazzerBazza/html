@@ -1,0 +1,27 @@
+<html>
+    <script>
+        function addThem(){
+            let firstNum = scrn1.value
+            let secondNum = scrn2.value
+
+            if (firstNum==""){
+                alert("First Number is Missing")
+                scrn1.focus()
+            
+            }else { 
+                if (secondNum==""){
+                alert("Second Number is Missing")
+                scrn2.focus()
+            }else{
+
+                scrn3.value=parseInt(firstNum) + parseInt(secondNum)
+            }
+        }
+    }
+        </script>
+ 
+ <input type="text" id="scrn1"> <br>
+ <input type="text" id="scrn2"> <br>
+ <input type="button" value="+" onclick="addThem()"> <br>
+ <input type="text" id="scrn3"> <br>
+</html>

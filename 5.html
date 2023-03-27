@@ -1,0 +1,74 @@
+<html>
+<script>
+    function addition(){
+
+        let A = num1.value
+        let B = num2.value
+        let C = parseInt(A) + parseInt(B)
+        num3.value=C
+    }
+
+    function minus(){
+
+let A = num1.value
+let B = num2.value
+let C = parseInt(A) - parseInt(B)
+num3.value=C
+}
+
+function multiply(){
+
+let A = num1.value
+let B = num2.value
+let C = parseInt(A) * parseInt(B)
+num3.value=C
+}
+
+function devide(){
+
+let A = num1.value
+let B = num2.value
+let C = parseInt(A) / parseInt(B)
+num3.value=C
+}
+
+function clearAll(){
+
+num1.value=""
+num2.value=""
+num3.value=""
+num4.value=""
+}
+
+
+</script>
+<style>
+    table{
+        background-color: brown;
+    }
+</style>
+
+<table>
+<tr>
+    <td>First Number:</td>
+    <td> <input type="text" id="num1"> </td>
+    </tr>
+    <tr>
+        <td>Second Number::</td>
+        <td> <input type="text" id="num2"> </td>
+        </tr>
+        <tr>
+            <td>Results:</td>
+            <td> <input type="text" id="num3"> </td>
+            </tr>
+</table>
+
+<br>
+<input type="button" value="+" onclick="addition()">
+<input type="button" value="-" onclick="minus()">
+<input type="button" value="*" onclick="multiply()">
+<input type="button" value="/" onclick="devide()">
+<input type="button" value="" onclick="clearAll()">
+
+
+</html>
